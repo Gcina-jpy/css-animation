@@ -1,0 +1,45 @@
+#box1 {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 119);
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    animation: myslide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+
+}
+
+
+#box1:hover {
+    animation: 7s linear 1s infinite running mySlide;
+}
+
+#box1:active {
+    animation: 7s linear 1s infinite running mySlide;
+}
+
+@keyframes myslide {
+from {  margin-left: 0%; }
+ to { margin-left: 100%;}
+ 0%{background-color: red;}
+    25%{background-color: blue;}
+    50%{background-color: yellow;}
+    100%{background-color: purple;}
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #343F4F;
+    
+}
+
+
